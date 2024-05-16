@@ -43,13 +43,13 @@ const links = [
 export default function Main() {
 	return (
 		<main className='w-full flex items-center justify-center'>
-			<ul className=' flex flex-col gap-4 w-4/5'>
+			<ul className=' flex flex-col gap-5 w-3/5'>
 				{links.map((link) => (
 					<li key={link.id}>
 						<Link
 							href={link.link}
 							target='_blank'
-							className='flex items-center justify-center relative w-full p-3 border-2 rounded-lg sm:text-lg text-base hover:scale-110 transition-all'
+							className='flex items-center justify-center relative w-full p-3 border-2 rounded-lg sm:text-lg text-base hover:scale-110 transition-transform '
 						>
 							<span className='absolute left-4 sm:text-4xl text-2xl'>{link.icone}</span>
 
