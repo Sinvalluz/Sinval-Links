@@ -42,15 +42,17 @@ const links = [
 
 export default function Main() {
 	return (
-		<main>
-			<ul>
+		<main className='w-full flex items-center justify-center'>
+			<ul className=' flex flex-col gap-4 w-4/5'>
 				{links.map((link) => (
 					<li key={link.id}>
 						<Link
 							href={link.link}
 							target='_blank'
+							className='flex items-center justify-center relative w-full p-3 border-2 rounded-lg sm:text-lg text-base hover:scale-110 transition-all'
 						>
-							{link.icone}
+							<span className='absolute left-4 sm:text-4xl text-2xl'>{link.icone}</span>
+
 							{link.nome}
 						</Link>
 					</li>
