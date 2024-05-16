@@ -1,7 +1,7 @@
 import { Roboto } from 'next/font/google';
 import './globals.css';
 
-const roboto = Roboto({ subsets: ['latin'], weight: '400' });
+const roboto = Roboto({ subsets: ['latin'], weight: ['400', '700'] });
 
 export const metadata = {
 	title: 'Sinval-Links',
